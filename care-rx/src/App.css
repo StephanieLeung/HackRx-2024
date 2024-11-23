@@ -1,0 +1,10 @@
+html, body {
+  height: 100%; /* Ensure the body and html elements take the full height of the screen */
+  margin: 0;    /* Remove default margin */
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #EFF3FA, #C8D3E2);
+}
