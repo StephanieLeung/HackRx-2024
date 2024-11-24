@@ -7,7 +7,7 @@
     justify-content: flex-start;
 }
 
-nav {
+.navBar {
     width: 100%;
     display: flex;
     padding: 20px 20px;
@@ -16,7 +16,7 @@ nav {
     height: 45px;
 }
 
-nav h1 {
+.navBar h1 {
     font-size: 40px;
     margin: 0px 0 0 24px;
     padding: 0;

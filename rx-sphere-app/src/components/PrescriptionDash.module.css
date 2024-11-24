@@ -96,10 +96,10 @@
 .content {
     display: flex;
     flex: 4;
-    width: 100%;
-    height: 99%;
+    width: 40%;
     overflow: auto;
-    padding: 40px 0 40px 40px;
+    height: 99%;
+    padding: 40px 60px 40px 40px;
     flex-direction: column;
     margin-top: 30px;
     margin-bottom: auto;
@@ -108,94 +108,63 @@
     border-bottom-left-radius: 40px;
 }
 
-.content h1 {
+.topBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 50px;
+}
+
+.topBar h1 {
+    display: inline-block;
     font-size: 36px;
     font-weight: bold;
+    width: 50%;
+    vertical-align: middle;
 }
 
-.table {
-    border-collapse: collapse;
+
+.btn {
+    display: inline-block;
+    background: #CC5A71;
+    color: #ffffff;
+    border-radius: 15px;
+    border: 0;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 20px 30px;
+}
+
+.btn:hover {
+    background-color: #D6AFB7
+}
+
+.mainContent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin: 30px auto;
+    gap: 50px;
     width: 100%;
-    font-family: 'Libre Franklin', sans-serif;
-}
-
-.table th, td {
-    text-align: center;
+    height: 100%;
+    overflow: auto;
     padding: 20px;
 }
 
-
-.table tbody tr:nth-child(odd) {
-    background-color: #E9EEF6; /* Light gray for odd rows */
+.gridSquare {
+    background-color: #EEE5E5;
+    border-radius: 20px;
+    aspect-ratio: 1 / 1;
+    padding: 40px 100px 40px 40px;
 }
 
-.table tbody tr:nth-child(even) {
-    background-color: #fff; /* White for even rows */
+.gridSquare h1 {
+    margin-top: 0;
+    font-size: clamp(1rem, 2.5vw, 3rem);
 }
 
-.open {
-    border: 1px solid #41BC63;
-    background: #EBF9F1;
-    border-radius: 22px;
-    color: #41BC63;
-    font-size: 15px;
+.gridSquare h3 {
+    font-size: clamp(1rem, 1vw, 1.2rem);
     font-weight: normal;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.booked {
-    border: 1px solid #BC9241;
-    background: #FBF9F4;
-    border-radius: 22px;
-    color: #BC9241;
-    font-size: 15px;
-    font-weight: normal;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.completed {
-    border: 1px solid #BC4141;
-    background: #FBF4F4;
-    border-radius: 22px;
-    color: #BC4141;
-    font-size: 15px;
-    font-weight: normal;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.actionBtn {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-}
-
-.bookBtn {
-    background: #CC5A71;
-    color: #ffffff;
-    border-radius: 8px;
-    border: 0;
-    padding: 10px 15px;
-    font-weight: bold;
-}
-
-.bookBtn:hover {
-    background-color: #D6AFB7
-
-}
-
-.deleteBtn {
-    border: 1px solid transparent;
-    background: rgb(0, 0, 0, 0);
-}
-
-.deleteBtn:hover {
-    border: 1px solid #BC4141;
-    border-radius: 5px;
+    line-height: 0.5;
+    margin-top: 1rem;
 }
