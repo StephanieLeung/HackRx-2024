@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import styles from './Login.module.css'; // CSS for styling
 
 import {useNavigate} from 'react-router-dom';
-import {useUser} from "../../context/UserContext.jsx";
+import { useUser } from "../../context/UserContext.jsx";
 
 
 function LoginPage() {
@@ -34,8 +34,8 @@ function LoginPage() {
                 console.log('Login succesful');
                 console.log(data.user);
                 console.log(data.user._id);
-                setUser({ id: data.user._id, name: data.user.status });
-                navigate('/appointments');
+                setUser(data.user);
+                navigate('/profile');
             } else {
                 console.error('Error response:', errorMessage);
                 setErrorMessage(data.message);
@@ -52,7 +52,7 @@ function LoginPage() {
     return (
         <div className={styles.container}>
             {/* Header with Login */}
-            <nav>
+            <nav className={styles.navBar}>
                 <h1 className="brand-name" onClick={(e) => navigate("/")}>
                     <span className={styles.turq}>Rx</span>
                     <span className={styles.darkBlue}>Sphere</span>
