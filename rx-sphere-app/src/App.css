@@ -18,3 +18,12 @@ html, body {
 .brand-name {
   font-family: 'Archivo Black', sans-serif;
 }
+
+.error-message {
+    border-radius: 10px;
+    border: 1px solid #BC4141;
+    background-color: #FBF4F4;
+    padding: 15px;
+    color: #BC4141;
+    width: 30%;
+}

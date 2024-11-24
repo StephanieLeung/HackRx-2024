@@ -96,10 +96,10 @@
 .content {
     display: flex;
     flex: 4;
-    width: 100%;
-    height: 99%;
+    width: 40%;
     overflow: auto;
-    padding: 40px 0 40px 40px;
+    height: 99%;
+    padding: 40px;
     flex-direction: column;
     margin-top: 30px;
     margin-bottom: auto;
@@ -108,94 +108,110 @@
     border-bottom-left-radius: 40px;
 }
 
-.content h1 {
-    font-size: 36px;
-    font-weight: bold;
-}
 
-.table {
-    border-collapse: collapse;
-    width: 100%;
-    font-family: 'Libre Franklin', sans-serif;
-}
-
-.table th, td {
-    text-align: center;
-    padding: 20px;
-}
-
-
-.table tbody tr:nth-child(odd) {
-    background-color: #E9EEF6; /* Light gray for odd rows */
-}
-
-.table tbody tr:nth-child(even) {
-    background-color: #fff; /* White for even rows */
-}
-
-.open {
-    border: 1px solid #41BC63;
-    background: #EBF9F1;
-    border-radius: 22px;
-    color: #41BC63;
-    font-size: 15px;
-    font-weight: normal;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.booked {
-    border: 1px solid #BC9241;
-    background: #FBF9F4;
-    border-radius: 22px;
-    color: #BC9241;
-    font-size: 15px;
-    font-weight: normal;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.completed {
-    border: 1px solid #BC4141;
-    background: #FBF4F4;
-    border-radius: 22px;
-    color: #BC4141;
-    font-size: 15px;
-    font-weight: normal;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-.actionBtn {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 10px;
-}
-
-.bookBtn {
+.btn {
+    display: inline-block;
     background: #CC5A71;
     color: #ffffff;
-    border-radius: 8px;
+    border-radius: 15px;
     border: 0;
-    padding: 10px 15px;
+    font-weight: bold;
+    margin: 5px;
+    padding: 5px 20px;
+    height: 60%;
+    word-wrap: break-word;
+}
+
+.btn:hover {
+    background-color: #D6AFB7
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: row;
+    margin: 60px;
+    gap: 50px;
+    width: 90%;
+    height: 100%;
+    overflow: auto;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.leftContent {
+    flex: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.leftSub {
+    display: flex;
+    flex-direction: column;
+    background-color: #EEE5E5;
+    height: 50%;
+    padding: 50px;
+    border-radius: 20px;
+    justify-content: space-between;
+}
+
+.topBar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.topBar img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 20px;
+}
+
+.category {
+    vertical-align: center;
+}
+
+.category h2 {
+    font-size: 40px;
     font-weight: bold;
 }
 
-.bookBtn:hover {
-    background-color: #D6AFB7
-
+.category h3 {
+    font-size: 30px;
+    font-weight: normal;
 }
 
-.deleteBtn {
-    border: 1px solid transparent;
-    background: rgb(0, 0, 0, 0);
+.title {
+    display:flex;
+    flex-direction: row;
 }
 
-.deleteBtn:hover {
-    border: 1px solid #BC4141;
-    border-radius: 5px;
+.rightContent {
+    display: flex;
+    flex-direction: column;
+    background-color: #EEE5E5;
+    height: 100%;
+    padding: 30px;
+    border-radius: 20px;
+    gap: 20px;
+}
+
+.rightSub {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 20px;
+    height: 50%;
 }

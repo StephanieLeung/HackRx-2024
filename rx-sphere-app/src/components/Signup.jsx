@@ -51,7 +51,8 @@ function SignupPage() {
                 console.log('Signup succesful');
                 console.log(data);
 
-                setUser({ id: data.user._id, name: data.user.status });
+                setUser(data.user);
+                navigate('/profile');
             } else {
                 console.error('Error response:', errorMessage);
                 setErrorMessage(data.message);
@@ -81,7 +82,7 @@ function SignupPage() {
     return (
         <div className={styles.container}>
             {/* Header with Login */}
-            <nav>
+            <nav className={styles.navBar}>
                 <h1 className="brand-name" onClick={(e) => navigate("/")}>
                     <span className={styles.turq}>Rx</span>
                     <span className={styles.darkBlue}>Sphere</span>

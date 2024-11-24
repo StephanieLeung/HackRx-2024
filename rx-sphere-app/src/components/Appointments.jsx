@@ -20,7 +20,7 @@ function AppointmentsPage() {
     useEffect(() => {
         async function fetchData() {
             try {
-                const id = user.id;
+                const id = user._id;
                 const response = await fetch('/api/users/appointments/' + id);
                 const result = await response.json();
 
@@ -60,16 +60,16 @@ function AppointmentsPage() {
                     <div className={styles.titleNav}>
                         <h3>Menu</h3>
 
-                        <button className={styles.menuBtn} onClick={() => navigate('/dashboard')}>
+                        <button className={styles.menuBtn}>
                             <img src="/dashboard_icon.png" alt="Dashboard"/>
                             <span>Dashboard</span>
                         </button>
                     </div>
-                    <button className={styles.menuBtn} onClick={() => navigate('/dashboard')}>
+                    <button className={styles.menuBtn} onClick={() => navigate('/profile')}>
                         <img src="/profile_icon.png" alt="Profile_icon"/>
                         <span>My Profile</span>
                     </button>
-                    <button className={styles.menuBtn} onClick={() => navigate('/dashboard')}>
+                    <button className={styles.menuBtn} onClick={() => navigate('/prescription')}>
                         <img src="/rx.png" alt="Prescription_icon"/>
                         <span>My Prescriptions</span>
                     </button>
@@ -78,11 +78,7 @@ function AppointmentsPage() {
                         <img src="/appointment.png" alt="Appointment"/>
                         <span>Manage Appointments</span>
                     </button>
-                    <button className={styles.menuBtn} onClick={(e) => navigate('/dashboard')}>
-                        <img src="/refill.png" alt="Medicine_icon"/>
-                        <span>Manage Refills</span>
-                    </button>
-                    <button className={styles.menuBtn} onClick={() => navigate('/dashboard')}>
+                    <button className={styles.menuBtn} onClick={() => navigate('/journal')}>
                         <img src="/journal.png" alt="Journal_icon"/>
                         <span>Health Journal</span>
                     </button>
