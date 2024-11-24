@@ -1,0 +1,195 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start;
+    background: #1A659E;
+}
+
+.navBar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 20px;
+    z-index: 1000; /* Makes sure the navbar is on top of other content */
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    align-items: center;
+
+}
+
+.navBar h1 {
+    font-size: 40px;
+    margin: 60px 0 10px 0;
+    padding: 0;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.turq {
+  color: #00E3F3;
+}
+
+.white {
+  color: #ffffff;
+}
+
+.navBar hr {
+    color: #ffffff;
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.navBar h3 {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+
+.navButtons {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-top: 10px;
+    gap: 30px;
+}
+
+.titleNav button {
+    width: 100%;
+}
+
+.menuBtn {
+    display: inline-block;
+    padding: 30px 20px;
+    background-color: #ffffff;
+    color: #161B4B;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+
+.menuBtn img, span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menuBtn img {
+    margin-right: 20px;
+}
+
+.menuBtn:hover {
+    background-color: #CBFFFC
+}
+
+.content {
+    display: flex;
+    flex: 4;
+    width: 40%;
+    height: 99%;
+    padding: 40px;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: auto;
+    background: #ffffff;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+
+.content h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.table th, td {
+  text-align: center;
+  padding: 20px;
+}
+
+
+tbody tr:nth-child(odd) {
+  background-color: #E9EEF6; /* Light gray for odd rows */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #fff; /* White for even rows */
+}
+
+.open {
+    border: 1px solid #41BC63;
+    background: #EBF9F1;
+    border-radius: 22px;
+    color: #41BC63;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.booked {
+    border: 1px solid #BC9241;
+    background: #FBF9F4;
+    border-radius: 22px;
+    color: #BC9241;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.completed {
+    border: 1px solid #BC4141;
+    background: #FBF4F4;
+    border-radius: 22px;
+    color: #BC4141;
+    font-size: 15px;
+    font-weight: normal;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.actionBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.bookBtn {
+    background: #CC5A71;
+    color: #ffffff;
+    border-radius: 8px;
+    border: 0;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.bookBtn:hover {
+    background-color: #D6AFB7
+
+}
+
+.deleteBtn {
+    border: 1px solid transparent;
+    background: rgb(0,0,0,0);
+}
+
+.deleteBtn:hover {
+    border: 1px solid #BC4141;
+    border-radius: 5px;
+}

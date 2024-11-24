@@ -1,0 +1,130 @@
+
+/* Landing Page Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, #EFF3FA, #C8D3E2);
+    justify-content: flex-start;
+    height:100%;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    padding: 20px 20px;
+    background-color: #F5F7FA; /* White background for the navbar */
+    z-index: 1000; /* Makes sure the navbar is on top of other content */
+    height: 45px;
+}
+
+nav h1 {
+    font-size: 40px;
+    margin: 0px 0 0 24px;
+    padding: 0;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.turq {
+  color: #00E3F3;
+}
+
+.darkBlue {
+  color: #161B4B;
+}
+
+
+.signupBtn {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #CC5A71;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.btn:hover {
+    background-color: #D6AFB7
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.leftContent {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.leftContent img {
+    width: 500px;
+    height: auto;
+    margin: 100px;
+}
+
+.rightContent h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.rightContent {
+    display: flex;
+    background: #ffffff;
+    flex: 2;
+    justify-content: center;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 25px;
+    width: 50%;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #161B4B;
+    border-radius: 10px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.formGroup button {
+    width: 200px;
+    margin-top: 30px;
+}

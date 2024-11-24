@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+
+html, body {
+  height: 100%; /* Ensure the body and html elements take the full height of the screen */
+  margin: 0;    /* Remove default margin */
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, #EFF3FA, #C8D3E2);
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+.brand-name {
+  font-family: 'Archivo Black', sans-serif;
+}
