@@ -28,11 +28,11 @@
 }
 
 .turq {
-  color: #00E3F3;
+    color: #00E3F3;
 }
 
 .white {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 .navBar hr {
@@ -88,12 +88,16 @@
     background-color: #CBFFFC
 }
 
+.active {
+    background-color: #CBFFFC;
+}
+
 .content {
     display: flex;
     flex: 4;
     width: 40%;
     height: 99%;
-    padding: 40px;
+    padding: 40px 0 40px 40px;
     flex-direction: column;
     margin-top: 30px;
     margin-bottom: auto;
@@ -108,23 +112,23 @@
 }
 
 .table {
-  border-collapse: collapse;
-  width: 100%;
-  font-family: 'Libre Franklin', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'Libre Franklin', sans-serif;
 }
 
 .table th, td {
-  text-align: center;
-  padding: 20px;
+    text-align: center;
+    padding: 20px;
 }
 
 
 tbody tr:nth-child(odd) {
-  background-color: #E9EEF6; /* Light gray for odd rows */
+    background-color: #E9EEF6; /* Light gray for odd rows */
 }
 
 tbody tr:nth-child(even) {
-  background-color: #fff; /* White for even rows */
+    background-color: #fff; /* White for even rows */
 }
 
 .open {
@@ -186,7 +190,7 @@ tbody tr:nth-child(even) {
 
 .deleteBtn {
     border: 1px solid transparent;
-    background: rgb(0,0,0,0);
+    background: rgb(0, 0, 0, 0);
 }
 
 .deleteBtn:hover {

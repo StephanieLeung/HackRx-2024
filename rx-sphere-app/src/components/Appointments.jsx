@@ -69,14 +69,22 @@ function AppointmentsPage() {
                         <img src="/profile_icon.png" alt="Profile_icon"/>
                         <span>My Profile</span>
                     </button>
+                    <button className={styles.menuBtn} onClick={() => navigate('/dashboard')}>
+                        <img src="/rx.png" alt="Prescription_icon"/>
+                        <span>My Prescriptions</span>
+                    </button>
                     <button className={[styles.menuBtn, styles.active].join(' ')}
                             onClick={(e) => navigate('/dashboard')}>
-
-                        Manage Appointments
+                        <img src="/appointment.png" alt="Appointment"/>
+                        <span>Manage Appointments</span>
                     </button>
                     <button className={styles.menuBtn} onClick={(e) => navigate('/dashboard')}>
-
-                        Manage Refills
+                        <img src="/refill.png" alt="Medicine_icon"/>
+                        <span>Manage Refills</span>
+                    </button>
+                    <button className={styles.menuBtn} onClick={() => navigate('/dashboard')}>
+                        <img src="/journal.png" alt="Journal_icon"/>
+                        <span>Health Journal</span>
                     </button>
                 </div>
             </nav>
