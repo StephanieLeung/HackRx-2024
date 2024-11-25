@@ -3,6 +3,7 @@ import styles from './Profile.module.css'; // CSS for styling
 
 import {useNavigate} from 'react-router-dom';
 import {useUser} from '../../context/UserContext.jsx'
+import NavBar from "./NavBar.jsx";
 
 
 
@@ -27,44 +28,11 @@ function ProfilePage() {
     }
 
     return (
-        <div className={styles.container}>
+        <div className="container">
             {/* Header with Login */}
-            <nav className={styles.navBar}>
-                <h1 className='brand-name'>
-                    <span className={styles.turq}>Rx</span>
-                    <span className={styles.white}>Sphere</span>
-                </h1>
-                <hr/>
-                <div className={styles.navButtons}>
-                    <div className={styles.titleNav}>
-                        <h3>Menu</h3>
-
-                        <button className={styles.menuBtn}>
-                            <img src="/dashboard_icon.png" alt="Dashboard"/>
-                            <span>Dashboard</span>
-                        </button>
-                    </div>
-                    <button className={[styles.menuBtn, styles.active].join(' ')}>
-                        <img src="/profile_icon.png" alt="Profile_icon"/>
-                        <span>My Profile</span>
-                    </button>
-                    <button className={styles.menuBtn} onClick={() => navigate('/prescription')}>
-                        <img src="/rx.png" alt="Prescription_icon"/>
-                        <span>My Prescriptions</span>
-                    </button>
-                    <button className={styles.menuBtn}
-                            onClick={(e) => navigate('/appointments')}>
-                        <img src="/appointment.png" alt="Appointment"/>
-                        <span>Manage Appointments</span>
-                    </button>
-                    <button className={styles.menuBtn} onClick={() => navigate('/journal')}>
-                        <img src="/journal.png" alt="Journal_icon"/>
-                        <span>Health Journal</span>
-                    </button>
-                </div>
-            </nav>
+            <NavBar/>
             {/* Main Content */}
-            <div className={styles.content}>
+            <div className="content">
                 <div className={styles.topBar}>
                     <h1>My Profile</h1>
                     <button className={styles.btn} onClick={handleLogout}>
